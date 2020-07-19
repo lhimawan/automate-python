@@ -1,7 +1,7 @@
 import webbrowser
 
 def search():
-#Takes long lat input & stores them into variables TODO: multiline input workaround
+#Takes long lat input & stores them into variables
     latlong = input('Please enter the lat & long:').split()
     zoom = '17' #set map zoom here TODO: zoom setting?
 
@@ -12,7 +12,7 @@ def search():
     webbrowser.open('https://en.mapy.cz/zakladni?x=%s&y=%s&z=%s' % (latlong[1], latlong[0], zoom))
     #webbrowser.open('https://wego.here.com/?map=%s,%s,%s,normal' % (latlong[0], latlong[1], zoom)) #source rarely used, commented out for now
     
-#Flow control: loop back to start of program unless "no" or "0" is entered  
+#Flow control: loop back to start of program
 run = True
 while run == True:
     try:
